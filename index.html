@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#242424">
+    <meta name="msapplication-navbutton-color" content="#242424">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" async></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <link rel="stylesheet" href="/laiba/css/index.css">
+    <link rel="stylesheet" href="/laiba/css/slide.css">
+    <link rel="stylesheet" href="/laiba/css/player.css">
+    <title>Laiba</title>
+    <link rel="icon" type="image/x-icon" href="/icons/crown_icon.png">
+</head>
+
+<body style="background-color: #2962ff;">
+    <div id="menu" class="content menu">
+        <div class="center" style="margin: 0; background-color: rgb(223, 231, 239);">
+            <h1 style="text-align:center; width: 100%;"><b style="font-weight: 800; color: white;">Menu</b></h1>
+            <a class="ar" onclick="document.getElementById('menu').style.boxShadow = 'none';
+            document.getElementById('menu').style.marginLeft = '-50%';
+            setTimeout(function(){
+                document.getElementById('menu').style.display = 'none';
+            }, 200);" style="padding: 0; margin-right: 50px;color: white;cursor: pointer; margin-top: -4px; font-size: 55px;"><img style="width: 35px;" src="icons/close.png" alt=""></a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('scroll', (event) => {
+            //this.style.display = 'flex';
+            var header = document.getElementById('headers');
+            console.log(document.scrollingElement.scrollTop)
+            if (document.scrollingElement.scrollTop >= 368) {
+                header.style.display = "flex";
+                setTimeout(() => {
+                    header.style.marginBottom = "";
+                    header.style.opacity = "1";
+                }, 10);
+
+            } else if (document.scrollingElement.scrollTop < 368) {
+                header.style.display = "none"
+                header.style.opacity = "0";
+                header.style.marginBottom = "-250px";
+            }
+        });
+    </script>
+    <div id="headers" class="header center" style="opacity: 0; transition: .5s; margin-bottom: -250px; box-shadow: 0px 0px 8px #0000002d;position: fixed; z-index: 500; display: none; background: #2962ff;">
+        <div style=" width: 100%;float: left; " align="left ">
+            <a class="ar " id="ma " onclick="menu() " style="cursor: pointer; "><img style="width: 35px; filter: brightness(250%);" src="css/bar.png " alt=" ">
+            </a>
+        </div>
+        <h1 style=" margin: 0; color: whitesmoke; align-items: center;" class="title onscroll " align="center ">Laiba&nbsp;Iqbal.</h1>
+        <div style=" background: transparent; padding: 0; width: 100%; float: right; " class="search " align="right ">
+            <div style="margin-right: 70px; "><a class="now onscroll " style="text-decoration: none; font-family: sans-serif; border-radius: 5px; background: whitesmoke; color: black;z-index: 110; opacity: 0.8; " href="#learnmore ">Learn more</a></div>
+        </div>
+        <div class="searchbtn " align="right " style=" margin: 25px; font-weight: 100; ">
+            <a class="ar " style="cursor: pointer; "><img class="search_ " style="width: 37px; " src="icons/search.png " alt=" ">
+            </a>
+        </div>
+    </div><br><br><br>
+    <div class="center " style="position: relative; z-index: 25; ">
+        <div class="col ">
+            <br><br><br><br>
+            <div style=" color: #232323; background: whitesmoke; border-radius: 6px; box-shadow: 0px 0px 8px #0000002d; border: 1px solid #9d9d9d; padding: 20px 40px; width: 650px; ">
+                <div class="row ">
+                    <img src="css/photo.png " style="width: 55px; position: static; height: fit-content; border-radius: 250px; " alt=" ">
+                    <div class="center ">
+                        <div class="col " style="margin-left: 15px; ">
+                            <p align="center " style="margin:0; text-align: left; color: black; ">Laiba Iqbal</p>
+                            <p align="center " style="margin:0; text-align: left; color: rgb(160, 160, 160); ">@lay.business77</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 align="center " class="main_Text " style="margin-top: 25px; font-size: 45px; font-weight: 900;">Giving&nbsp; you&nbsp; a&nbsp; blueprint&nbsp; on &nbsp;how&nbsp;to&nbsp;make&nbsp;money&nbsp;online</h1>
+                <div class="row " style="width: 100%; ">
+                    <div align="left " style="float: left;width: 50%; ">
+                        <p style="color: black; display: inline-flex; width: auto; " class="center "><img src="css/heart.png " style="width: 23px; filter:invert(50%); " alt=" "> <i style="margin-left: 5px;font-size: 18px; ">1</i></p>
+                    </div>
+                    <div align="right " style="float: right;width: 50%; ">
+                        <p style="color: black; display: inline-flex; width: auto; " class="center "><img src="css/book.png " style="filter:invert(65%); width: 28px; margin-right: 10px; " alt=" "> <i style="font-size: 17px; ">7 min read</i></p>
+                    </div>
+                </div>
+            </div><br><br><br>
+            <div class="center "><a class="now onscroll " style="z-index: 110; opacity: 0.8; " href="#learnmore ">Learn more</a></div>
+        </div>
+    </div>
+    <!--div class="main content " style="background: whitesmoke; margin-top: -250px; width: 100vw; ">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div-->
+    <div class="main content " style="background: whitesmoke; width: 100vw; margin-top: -255px; "><br><br>
+        <div class="center fixskew " style="margin-top: 350px; padding: 40px; ">
+            <h1 style="text-align: left; ">View our Offerings <br>
+                <p style="font-weight: 300; color: #232323; ">Our offerings include data that you may only wonder <br> wonnna create a website just like this, contact me @</p>
+                <a class="onscroll " style="text-decoration: none; z-index: 110; font-size: 14px; border-radius: 5px; opacity: 0.8; " href="#learnmore ">contact me</a>
+            </h1>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <script>
+        function repla(thy, fo) {
+            const four = document.getElementById(fo);
+            if (thy.className !== 're') {
+                thy.className = 're';
+                four.style.width = '100%';
+                four.classList.replace('description', 'desdone');
+                document.getElementById(fo + 'one').style.display = 'block';
+            } else {
+                thy.className = 'rea';
+                four.style.width = '50%';
+                four.classList.replace('desdone', 'description');
+                document.getElementById(fo + 'one').style.display = 'flex';
+            }
+        }
+    </script>
+    </div>
+
+    <div class="end content " style="width: 100vw; background:linear-gradient(125deg,#6279ffb1,#8a1dffb1, #6b0bd2b1, #4e4bb5b1); background: #000000; ">
+
+        <div class="center fixskew ">
+            <h1 class="endText onscroll " style="font-family: 'bold', sans-serif; color: #e7e7e7; margin-top: 250px; ">Keep in touch with me! <br>Say Hi!</h1>
+        </div>
+        <div class="fixskew ">
+            <p style="font-size: 25px; text-align: center; width: 100%; " class="gmai link cat onscroll ">lay.business77@gmail.com</p>
+        </div>
+
+        <div class="center fixskew ">
+            <div class="row ">
+                <div class="center " style="display: flex; flex-wrap: wrap; flex: 30%; ">
+                    <p style="font-size: 19px; margin-bottom: -25px; margin-right: 0px; background-color: white; color:#242424; padding: 15px; border-radius: 5px; ">Co-Founder of Destined</p>
+                    <div class="col ">
+                        <img class="onscroll " style="width: 150px; " src="icons/header-3-1.png " alt=" ">
+                    </div>
+                    <p style="font-size: 26px; margin-bottom: -25px; ">
+                        <a style="text-decoration: none; font-size: 19px; " href="https://destinedstudios.co/ " class="a ">@Destined&nbsp;Studios</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br><br><br>
+        <div class="row center fixskew ">
+            <div class="column ">
+                <p class="cat ">Feedback</p>
+                <p onclick="respective(this) " class="cat link ">Website
+                </p>
+                <p onclick="respective(this) " class="cat link ">Tools
+                </p>
+                <p onclick="respective(this) " class="cat link ">API
+                </p>
+                <p onclick="respective(this) " class="cat link ">Design
+                </p>
+                <p onclick="respective(this) " class="cat link ">Services
+                </p>
+                <p onclick="respective(this) " class="cat link ">Chat
+                </p>
+            </div>
+            <div class="column ">
+                <p class="cat ">API</p>
+                <p onclick="respective(this) " class="cat link ">Website
+                </p>
+                <p onclick="respective(this) " class="cat link ">Jobs
+                </p>
+                <p onclick="respective(this) " class="cat link ">Additional
+                </p>
+            </div>
+            <div class="column ">
+                <p class="cat ">A Tour</p>
+                <p onclick="respective(this) " class="cat link ">To Firm</p>
+                <p onclick="respective(this) " class="cat link ">To Networks</p>
+                <p onclick="respective(this) " class="cat link ">To Servers</p>
+            </div>
+            <div class="column ">
+                <p onclick="respective(this) " class="cat ">Collaboration</p>
+                <p onclick="respective(this) " class="cat link ">Youtube</p>
+                <p onclick="respective(this) " class="cat link ">Documentary</p>
+                <p onclick="respective(this) " class="cat link ">Production</p>
+            </div>
+            <div class="column ">
+                <p class="cat ">Investment</p>
+                <p onclick="respective(this) " class="cat link ">Investment</p>
+            </div>
+            <div class="column ">
+                <p class="cat ">A Website By.</p>
+                <p onclick="respective(this) " class="cat link ">Abdul. Moiz <br> aka Amoiz</p>
+            </div>
+        </div><br><br><br><br><br><br><br>
+        <div class="center fixskew " style="width: 100vw; text-align: center; height: 0px; border: .01rem solid rgb(74, 74, 74); color: white; font-size: 17px; font-weight: 700; font-family: 'bold', sans-serif; ">
+            <p style="display: flex; justify-content: center; align-items: center; background-color: #242424; padding: 25px 45px; "><img style="width: 25px; filter: brightness(50%); margin-right: 5px; " src="icons/copyright.png " alt=" "> 2023 CopyRights Reserved</p>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    const content = document.querySelectorAll(".onscroll ");
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fadeshowLeft2');
+            } else {
+                entry.target.classList.remove('fadeshowLeft2');
+            }
+        })
+    })
+    content.forEach((el) => observer.observe(el));
+
+    // Attach the scroll event listener
+    window.addEventListener("scroll ", handleScroll);
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100&display=swap') small;
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap') bold;
+    body {
+        background-color: aliceblue;
+        margin: 0;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+    
+    body::-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        background: #282828;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background-color: rgb(97, 97, 97);
+        border-radius: 7px;
+        margin: 25px;
+    }
+    
+    body::-webkit-scrollbar-thumb:hover {
+        background-color: rgb(139, 139, 139);
+    }
+    
+    .row {
+        display: flex;
+    }
+    
+    .learn {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .col {
+        display: block;
+    }
+    
+    h1 {
+        color: #242424;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 900;
+        font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    
+    .small {
+        font-family: 'small', sans-serif;
+    }
+    
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .header {
+        width: 100vw;
+        height: 100px;
+        box-shadow: 0px 0px 3px #9c9c9c4d;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    
+    p {
+        color: #e2e2e2;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .link {
+        color: #77abff;
+        text-decoration: none;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+    
+    input {
+        padding: 15px 25px;
+        border-radius: 5px;
+        font-size: 17px;
+        outline: none;
+        border: 2px solid #7575754d;
+        background: #e8e8e8;
+        color: rgb(50, 50, 50);
+    }
+    
+    .search {
+        padding: 15px 25px;
+        border-radius: 5px;
+        font-size: 17px;
+        outline: none;
+        border: 2px solid #7575754d;
+        background: #e8e8e8;
+        color: rgb(50, 50, 50);
+    }
+    
+    b {
+        font-family: 'bold', sans-serif;
+    }
+    
+    .b {
+        font-family: 'bold', sans-serif;
+    }
+    
+    .main {
+        width: 100vw;
+        /* #0a0a0a */
+        background: linear-gradient(0deg, #000000 30%, #0a0a0a 60%);
+        height: auto;
+        -ms-transform: skew(0deg, 2deg);
+        /* IE 9 */
+        -webkit-transform: skew(0deg, 2deg);
+        /* Safari */
+        transform: skew(0deg, 2deg);
+        /* Standard syntax */
+    }
+    
+    .end {
+        width: 100vw;
+        background-color: #242424;
+        height: 40vh;
+        -ms-transform: skew(0deg, 2deg);
+        -webkit-transform: skew(0deg, 2deg);
+        transform: skew(0deg, 2deg);
+    }
+    
+    .fixskew {
+        -ms-transform: skew(0deg, -2deg);
+        /* IE 9 */
+        -webkit-transform: skew(0deg, -2deg);
+        /* Safari */
+        transform: skew(0deg, -2deg);
+        /* Standard syntax */
+    }
+    
+    .cat {
+        margin-right: 75px;
+        color: #bcbcbc;
+        font-size: 19px;
+    }
+    
+    .link {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+    
+    a {
+        border-radius: 80px;
+        background-color: white;
+        color: #242424;
+        background-color: #2962ff;
+        color: whitesmoke;
+        padding: 15px 25px;
+        margin-top: 25px;
+    }
+    
+    .ar {
+        background-color: transparent;
+    }
+    
+    br {
+        user-select: none;
+    }
+    
+    .menu {
+        transition: 0.4s;
+        width: 50vw;
+        height: 100vh;
+        position: fixed;
+        background-color: #0a0a0a;
+        box-shadow: none;
+        margin-left: -50%;
+        z-index: 500;
+        display: none;
+    }
+    
+    i {
+        color: #a4a4a4;
+        font-size: 22px;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: normal;
+    }
+    
+    .tab {
+        display: none;
+    }
+    
+    .icons {
+        position: relative;
+        display: block;
+        text-align: center;
+        z-index: 10;
+    }
+    
+    .icons img {
+        filter: drop-shadow(0 5px 25px #00000073);
+        padding: -20px;
+    }
+    
+    .p {
+        transition: 0.5s;
+        color: #f4f4f4;
+        transform: translateY(-500%);
+        position: relative;
+        z-index: -1;
+        opacity: 0;
+    }
+    
+    .griddy {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+    .element {
+        border-radius: 12px;
+        padding: 35px;
+        background: #57575748;
+        margin: 10px;
+        display: block;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.205);
+        max-width: 255px;
+        width: auto;
+        backdrop-filter: blur(90px);
+    }
+    
+    element:nth-child(2) {
+        transition-delay: 200ms;
+    }
+    
+    element:nth-child(3) {
+        transition-delay: 400ms;
+    }
+    
+    element:nth-child(4) {
+        transition-delay: 600ms;
+    }
+    
+    element:nth-child(5) {
+        transition-delay: 800ms;
+    }
+    
+    .element p {
+        font-size: 24px;
+        color: #c6c6c6;
+    }
+    
+    .element h1 {
+        color: #fff;
+        font-size: 26px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 700;
+    }
+    
+    .icons:hover .p {
+        opacity: 1;
+        transition: 0.4s;
+        transform: translateY(-50%);
+    }
+    
+    .icons:nth-child(2) {
+        transition-delay: 200ms;
+    }
+    
+    .icons:nth-child(3) {
+        transition-delay: 400ms;
+    }
+    
+    .icons:nth-child(4) {
+        transition-delay: 600ms;
+    }
+    /*    COMPATABILITY WITH (MOBILE PHONES)    */
+    
+    .search {
+        border: none;
+    }
+    
+    .searchbtn {
+        display: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .main_Text {
+        font-size: 75px;
+    }
+    
+    .Quote_img {
+        width: 80px;
+    }
+    
+    .two {
+        width: 350px;
+        filter: brightness(500%);
+    }
+    
+    .align__ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .showmore {
+        width: 100%;
+        text-align: right;
+        font-size: 10px;
+        text-decoration: underline;
+        cursor: pointer;
+        margin-left: -90px;
+    }
+    
+    .adver {
+        text-align: center;
+        font-size: 15px;
+        margin: auto;
+        color: white;
+        font-weight: 700;
+    }
+    
+    .cam1 {
+        max-width: 480px;
+        width: 480px;
+        height: auto;
+    }
+    
+    .cam2 {
+        width: 440px;
+    }
+    
+    .camtext {
+        font-size: 55px;
+    }
+    
+    .list {
+        margin-left: 160px;
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    
+    .ap {
+        transition: 0.1s;
+        color: #282828;
+    }
+    
+    .ap:hover {
+        transition: 0.1s;
+        color: white;
+        cursor: pointer;
+    }
+    
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: rgb(37, 37, 37);
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 4px;
+        user-select: none;
+        margin: 65px;
+        background-color: #f4f4f4;
+    }
+    
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(248, 248, 248, 0.456);
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 4px;
+        background-color: #717171;
+        background-color: #f4f4f4;
+        margin: 65px;
+        right: 15%;
+    }
+    
+    .active_ {
+        transition: 0.5s;
+        overflow: hidden;
+        background: linear-gradient(90deg, rgba(113, 113, 113, 0.544), transparent);
+        border-radius: 5px;
+        padding-left: 45px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    
+    .active_ i {
+        color: white;
+    }
+    
+    .inactive {
+        transition: 0.5s;
+        overflow: hidden;
+        border-bottom: 1px solid #71717160;
+        border-radius: 5px;
+        padding-left: 45px;
+        padding-top: 25px;
+        padding-bottom: 50px;
+    }
+    
+    .inactive a {
+        display: none;
+    }
+    
+    .inactive i {
+        color: rgb(55, 55, 55);
+    }
+    
+    .inactive p {
+        display: none;
+        color: #383838;
+    }
+    
+    .inactive .description {
+        display: none;
+        color: #383838;
+    }
+    
+    .inactive h1 {
+        color: #c8c8c8;
+    }
+    
+    .rep h1 {
+        color: white;
+        font-family: 'bold', sans-serif;
+        width: 450px;
+        font-size: 55px;
+        font-weight: 700;
+    }
+    
+    .description {
+        font-size: 25px;
+        height: 1rem;
+        overflow: hidden;
+        border-radius: 7px;
+        padding: 15px;
+        margin: 0;
+        margin-top: -30px;
+        margin-bottom: 25px;
+    }
+    
+    .oneline::first-line {
+        display: block;
+        color: #cccccc;
+    }
+    
+    .rea::before {
+        content: "...ShowMore ";
+        color: #ffffff;
+        font-size: 25px;
+        height: 5rem;
+        padding: 15px;
+        margin: 0;
+        margin-top: -10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .re::before {
+        content: "...ShowLess ";
+        color: #ffffff;
+        font-size: 25px;
+        height: 5rem;
+        padding: 15px;
+        margin: 0;
+        margin-top: -10px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    
+    .des2 {
+        position: absolute;
+        width: 100%;
+        height: 70px;
+        z-index: 25;
+        bottom: 6.6%;
+        border-radius: 7px;
+        background: linear-gradient(to bottom, rgba(211, 211, 211, 0), #000000e9 80%);
+        pointer-events: none;
+    }
+    
+    .des2:hover {
+        opacity: 0;
+        pointer-events: none;
+        height: auto;
+        display: inline-block;
+    }
+    
+    .desdone {
+        height: auto;
+        display: inline-block;
+        font-size: 25px;
+        overflow: hidden;
+        border-radius: 7px;
+        padding: 15px;
+        margin: 0;
+        margin-top: -30px;
+        margin-bottom: 25px;
+    }
+    
+    .endText {
+        font-size: 65px;
+    }
+    
+    .des h1 {
+        font-size: 16px;
+    }
+    
+    .des {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+    }
+    
+    @media screen and (max-width:1188px) {
+        .one {
+            width: 150;
+        }
+        .two {
+            width: 300px;
+        }
+        .showmore {
+            display: flex;
+            width: 0;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding-right: 80px;
+        }
+    }
+    
+    @media screen and (max-width:1020px) {
+        .cam1 {
+            width: 360px;
+            margin-right: -170px;
+        }
+        .main {
+            background: linear-gradient(0deg, #000000 30%, #0a0a0a 80%);
+        }
+    }
+    
+    @media screen and (max-width:975px) {
+        .align__ {
+            display: block;
+        }
+        .one {
+            width: 350px;
+            margin-left: -205px;
+        }
+        .two {
+            width: 280px;
+        }
+        .showmore {
+            display: flex;
+            width: 0;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            padding: 0;
+        }
+    }
+    
+    @media screen and (max-width:993px) {
+        .cam2 {
+            width: 300px;
+        }
+        .camtext {
+            margin-right: -45px;
+            font-size: 35px;
+        }
+    }
+    
+    @media screen and (max-width: 890px) {
+        .view {
+            display: none;
+        }
+        .list {
+            margin: auto;
+        }
+    }
+    
+    @media screen and (max-width: 800px) {
+        .list {
+            margin-left: -50px;
+        }
+        .cam1 {
+            margin-left: 180px;
+            margin-bottom: -290px;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+        }
+        .rep {
+            display: block;
+            justify-content: left;
+            align-items: left;
+            width: auto;
+            margin-bottom: 150px;
+        }
+        .rep div {
+            margin: 0;
+            margin-top: 250px;
+            width: auto;
+        }
+        .rep h1 {
+            font-size: 45px;
+            margin: 0;
+            margin-bottom: -60px;
+        }
+        .endText {
+            text-align: center;
+        }
+    }
+    
+    @media screen and (max-width:735px) {
+        .search {
+            display: none;
+        }
+        .searchbtn {
+            display: block;
+        }
+        .menu {
+            transition: .7s;
+            width: 100%;
+        }
+        .list {
+            margin: auto;
+            margin-left: 5px;
+            width: 600px;
+        }
+        .prev,
+        .next {
+            background-color: transparent;
+            font-size: 25px;
+            color: white;
+        }
+        .next {
+            color: white;
+            background-color: transparent;
+            font-size: 25px;
+        }
+        .prev:hover,
+        .next:hover {
+            color: #9c9c9c;
+            background-color: transparent;
+        }
+    }
+    
+    @media screen and (max-width: 664px) {
+        .list {
+            margin: auto;
+            margin-left: 5px;
+            width: 550px;
+        }
+    }
+    
+    @media screen and (max-width: 623px) {
+        .list {
+            margin: auto;
+            margin-left: -30px;
+            width: 500px;
+        }
+    }
+    
+    @media screen and (max-width:562px) {
+        .list {
+            margin: auto;
+            margin-left: 25px;
+            width: 500px;
+        }
+        .cam1 {
+            width: 100%;
+            margin: auto;
+            margin-bottom: -350px;
+        }
+        .searchbtn {
+            margin-top: 25px;
+        }
+        .search_ {
+            margin-right: 25px;
+            margin-top: 15px;
+            width: 55px;
+        }
+        .title {
+            font-size: 25px;
+        }
+        .Quote {
+            font-size: 25px;
+        }
+    }
+    
+    @media screen and (max-width:519px) {
+        .list {
+            margin: auto;
+            margin-left: 30px;
+            width: 400px;
+        }
+    }
+    
+    @media screen and (max-width:480px) {
+        .list {
+            margin: 0;
+            position: relative;
+            width: 400px;
+            margin-left: 45px;
+        }
+    }
+    
+    @media screen and (max-width:452px) {
+        .camtext {
+            font-size: 25px;
+        }
+        .list {
+            margin: auto;
+            margin: 0;
+            margin-left: 0px;
+            width: 400px;
+        }
+        .rep h1 {
+            display: block;
+            font-size: 35px;
+            width: 250px;
+        }
+        .rep div {
+            margin: 25px;
+            margin-left: -50px;
+        }
+        .description {
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+    }
+    
+    @media screen and (max-width:422px) {
+        .main_Text {
+            font-size: 65px;
+        }
+        .Quote {
+            font-size: 23px;
+        }
+        .rep h1 {
+            display: block;
+            font-size: 35px;
+            width: 200px;
+        }
+        .rep div {
+            width: 200px;
+            left: 0;
+        }
+        .Quote_img {
+            width: 55px;
+        }
+        .list {
+            margin: auto;
+            margin-left: 125px;
+            margin: 0;
+            margin-left: 30px;
+            width: 400px;
+        }
+    }
+    
+    @media screen and (max-width:389px) {
+        .main_Text {
+            font-size: 56px;
+        }
+        .endText {
+            font-size: 30px;
+        }
+        .gmai {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            color: #616161;
+        }
+    }
+    
+    @media screen and (max-width:360px) {
+        .main_Text {
+            font-size: 49px;
+        }
+        .list {
+            width: 350px;
+        }
+    }
+    
+    @media screen and (max-width:325px) {
+        .list {
+            width: 300px;
+        }
+    }
+    
+    @media screen and (max-width:315px) {
+        .rep {
+            margin-left: -250px;
+        }
+        .rep h1 {
+            display: block;
+            font-size: 28px;
+            width: 200px;
+        }
+        .rep div {
+            width: 200px;
+            margin-right: -250px;
+        }
+    }
+</style>
