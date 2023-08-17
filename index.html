@@ -19,6 +19,7 @@
 </head>
 
 <body style="background-color: #2962ff;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt USD384315918 ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     <div id="menu" class="content menu">
         <div class="center" style="margin: 0; background-color: rgb(223, 231, 239);">
             <h1 style="text-align:center; width: 100%;"><b style="font-weight: 800; color: white;">Menu</b></h1>
@@ -86,7 +87,19 @@
                     </div>
                 </div>
             </div><br><br><br>
-            <div class="center "><a class="now onscroll " style="z-index: 110; opacity: 0.8; " href="#learnmore ">Learn more</a></div>
+            <div class="center">
+                <div id="emaildiv" class="center" style="opacity: 0; position: absolute; transition: 0.4s;display: none;">
+                    <div style="display: block;">
+                        <i id="email" style="text-align: center; font-weight: 100; transition: .2s; padding: 0 15px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; margin:-16px 25px; background-color: whitesmoke; position: absolute; user-select: none; pointer-events: none;">Enter your email</i>
+                    </div>
+                    <input onfocusout="document.getElementById('email').style.fontSize = ''; document.getElementById('email').style.marginTop = '-16px'; " onfocus="document.getElementById('email').style.fontSize = '17px'; document.getElementById('email').style.marginTop = '-45px'; "
+                        style="border-radius: 25px; padding-right: 35px; border: 2px solid #5885ff; background-color: whitesmoke;" onmouseleave="" type="text">
+                </div>
+                <div>
+                    <a class="now onscroll" onclick="this.style.marginLeft = '340px'; document.getElementById('emaildiv').style.display = 'flex';setTimeout(() => document.getElementById('emaildiv').style.opacity = '1', 50)" style="position: relative; z-index: 1010; background-color: #5885ff; transition: .4s;padding: 19px 25px; margin: 25px;"
+                        href="#learnmore ">Get Started</a>
+                </div>
+            </div>
         </div>
     </div>
     <!--div class="main content " style="background: whitesmoke; margin-top: -250px; width: 100vw; ">
@@ -94,8 +107,10 @@
     </div-->
     <div class="main content " style="background: whitesmoke; width: 100vw; margin-top: -255px; "><br><br>
         <div class="center fixskew " style="margin-top: 350px; margin-bottom: 25px; padding: 40px; ">
-            <h1 class="sec1" style="text-align: left; max-width: 800px;">View our Offerings <br>
-                <p style="font-weight: 300; color: #232323; ">Our offerings include data that you may only wonder wonnna create a website just like this, contact me at lay.business77@gmail.com<br></p>
+            <h1 class="sec1" style="text-align: left; max-width: 800px;">
+                <i style="font-weight: 100; font-size: 17px;letter-spacing: 1px; color: #2962ff;">lay.business77@gmail.com</i>
+                <br>View our Offerings <br>
+                <p style="font-weight: 100; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #232323; ">Our offerings include data that you may only wonder wonnna create a website just like this, contact me at <br></p>
                 <a class="onscroll " style="text-decoration: none; z-index: 110; font-size: 14px; border-radius: 5px; opacity: 0.8;" href="#contacts ">contact me</a>
             </h1>
         </div>
