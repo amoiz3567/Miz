@@ -747,11 +747,34 @@
             width: 400px;
             margin-left: 45px;
         }
+        .cam1 {
+            width: 0;
+            margin-top: 125px;
+        }
+        .rep h1 {
+            width: 100vw;
+        }
+        .main_Text {
+            margin-bottom: 45px;
+            font-size: 6.3vw;
+        }
+        .bru {
+            width: 100vw;
+            margin: auto;
+        }
+    }
+    
+    .niyet {
+        margin-left: 115px;
     }
     
     @media screen and (max-width:452px) {
         .camtext {
             font-size: 25px;
+        }
+        .bru {
+            width: 100vw;
+            margin: auto;
         }
         .list {
             margin: auto;
@@ -764,9 +787,15 @@
             font-size: 35px;
             width: 250px;
         }
+        .divs {
+            margin-top: 375px;
+            margin-left: 0;
+        }
+        .niyet {
+            margin-left: 0px;
+        }
         .rep div {
-            margin: 25px;
-            margin-left: -50px;
+            margin: -37px;
         }
         .description {
             font-size: 19px;
@@ -782,9 +811,7 @@
             font-size: 23px;
         }
         .rep h1 {
-            display: block;
-            font-size: 35px;
-            width: 200px;
+            width: 100vw;
         }
         .rep div {
             width: 200px;
