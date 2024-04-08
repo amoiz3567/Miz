@@ -873,7 +873,14 @@ element:nth-child(5) {
         width: 400px;
     }
 }
-
+.des {
+    margin: 0;
+}
+@media screen and (max-width:389px) {
+    .des {
+        margin-top: 55px;
+    }
+}
 @media screen and (max-width:389px) {
     .main_Text {
         font-size: 5.8vw;
