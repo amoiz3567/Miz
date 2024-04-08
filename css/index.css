@@ -739,6 +739,10 @@ element:nth-child(5) {
         width: 500px;
     }
 }
+@media screen and (max-width: 606px) {
+    .main_text {
+        margin: auto;    }
+}
 
 @media screen and (max-width:562px) {
     .list {
